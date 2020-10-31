@@ -1,0 +1,113 @@
+body {
+    font-family: 'Raleway', sans-serif;
+
+    animation: colorchange 10s ease infinite;
+}
+
+@keyframes colorchange
+ {
+   0% {background: ivory;}
+  25% {background: cornsilk;}
+  50% {background: papayawhip;}
+  75% {background: cornsilk;}
+  100% {background: ivory;}
+}
+
+header {
+  display: block;
+  margin:10px auto;
+  text-align: center;
+  font-size: 5em;
+  position: static;
+  animation: colorchange 10s ease infinite;@keyframes colorchange
+   {
+     0% {background: ivory;}
+    25% {background: cornsilk;}
+    50% {background: papayawhip;}
+    75% {background: cornsilk;}
+    100% {background: ivory;}
+  }
+
+}
+img{
+max-width: 100%;
+display: block;
+margin: 0px auto;
+}
+.gridcontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
+.hotdogtype {
+  display: block;
+  align-content: center;
+  margin: 40px auto;
+  font-size: 1em;
+  max-width: 300px;
+  text-align: center;
+}
+
+#logo{
+max-width: 250px;
+display: block;
+margin: 10px auto;
+}
+
+nav{
+  display: grid;
+  /* Change previous grid */
+  grid-auto-flow: column;
+  grid-gap: 2%;
+  padding:2% auto;
+  font-size: 3em;
+}
+
+nav a{
+  margin: 20px auto;
+  text-decoration: none;
+  color: #322311;
+  font-weight: normal;
+  font-size: 30%;
+
+}
+
+@media only screen and (min-width:500px){
+    /* ---- Tablet styles below ---- */
+
+    .gridcontainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 20%;
+      justify-content: center;
+    }
+
+
+
+
+
+
+
+
+
+      }
+
+      @media only screen and (min-width:1000px){
+          /* ---- Desktop styles below ---- */
+
+          .gridcontainer {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 20%;
+            justify-content: center;
+          }
+
+
+
+
+
+
+
+
+
+            }
