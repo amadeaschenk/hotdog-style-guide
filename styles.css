@@ -32,7 +32,7 @@ header {
 }
 img{
 max-width: 100%;
-display: block;
+display: grid;
 margin: 0px auto;
 }
 
@@ -40,20 +40,41 @@ p {
   text-align: center;
 }
 
-.gridcontainer {
+main {
   display: grid;
-  grid-column: auto;
-  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 1rem;
 }
 
+.ingredients {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-column-gap: 1%;
+
 }
-.hotdogtype {
+
+
+article {
   display: block;
   align-content: center;
-  margin: 40px 40px;
   padding: 10px;
   font-size: 1em;
   max-width: 100%;
+
+}
+
+h2 {
+  font-size: 3em;
+  text-align: center;
+}
+
+ul {
+  font-size: 3em;
+  text-align: center;
+  list-style-type: none;
+  max-width: 100%;
+  line-height: 1em;
+  background-color: inherit;
 
 }
 
@@ -89,26 +110,18 @@ nav a{
 
 
 
-@media only screen and (min-width:500px){
-    /* ---- Tablet styles below ---- */
-
-    .gridcontainer {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 5%;
-      justify-content: center;
-    }
 
 
-      @media only screen and (min-width:1000px){
-          /* ---- Desktop styles below ---- */
 
-          .gridcontainer {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-column-gap: 5%;
-            justify-content: center;
-          }
+@media only screen and (min-width:1000px){
+    /* ---- Desktop styles below ---- */
+
+
+
+
+
+
+
 
           header {
             display: block;
