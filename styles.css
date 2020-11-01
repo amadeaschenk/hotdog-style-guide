@@ -48,8 +48,9 @@ main {
 
 .ingredients {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  repeat(auto-fit, minmax(500px, 2fr 1fr));
   grid-column-gap: 1%;
+  margin: 20px 20px 20px 20px;
 
 }
 
@@ -75,6 +76,8 @@ ul {
   max-width: 100%;
   line-height: 1em;
   background-color: inherit;
+  padding: 0px;
+
 
 }
 
