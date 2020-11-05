@@ -1,5 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Special Elite', cursive;
 
     animation: colorchange 10s ease infinite;
 }
@@ -15,10 +19,11 @@ body {
 
 header {
   display: block;
-  max-width: 100%;
-  margin:10px auto;
-  text-align: center;
-  font-size: 2.5em;
+  max-width: 70%;
+  margin:1% auto 5% auto;
+  padding: 3%;
+
+
   position: static;
   animation: colorchange 10s ease infinite;@keyframes colorchange
    {
@@ -27,6 +32,16 @@ header {
     50% {background: papayawhip;}
     75% {background: cornsilk;}
     100% {background: ivory;}
+  }
+
+  .headline {
+    display: none;
+  }
+
+  h1 {
+    display: block;
+    align: center;
+font-size: 3rem;
   }
 
 }
@@ -44,39 +59,42 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-gap: 1rem;
+  margin: 20px 20px 20px 20px;
 }
 
 .ingredients {
-  display: grid;
-  repeat(auto-fit, minmax(500px, 2fr 1fr));
-  grid-column-gap: 1%;
-  margin: 20px 20px 20px 20px;
-
+  display: block;
 }
 
 
 article {
   display: block;
   align-content: center;
-  padding: 10px;
-  font-size: 1em;
+
+  font-size: 2em;
   max-width: 100%;
 
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 5rem;
   text-align: center;
+  margin-top: 150px;
+  margin-bottom: 0px;
+
+
 }
 
+
+
 ul {
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
   list-style-type: none;
   max-width: 100%;
   line-height: 1em;
   background-color: inherit;
-  padding: 0px;
+  padding-left: 0px;
 
 
 }
@@ -87,11 +105,22 @@ a {
   color: inherit;
 }
 
-#logo{
-max-width: 250px;
-display: block;
-margin: 10px auto;
+section {
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+
 }
+
+
+
+#gotcha {
+  color: indianred;
+  font-size: 4.5rem;
+  margin-bottom: 0px;
+}
+
+
 
 nav{
   display: grid;
@@ -99,7 +128,7 @@ nav{
   grid-auto-flow: column;
   grid-gap: 2%;
   padding:2% auto;
-  font-size: 3em;
+  font-size: 4em;
 }
 
 nav a{
@@ -111,6 +140,63 @@ nav a{
 
 }
 
+/* START MOBILE FORM STYLES */
+  .form-container{
+    margin: 20px auto;
+    width:90%;
+  }
+  form p{
+    margin-bottom:5px;
+  }
+  label{
+    display:block;
+  }
+  #newsletter input{
+    display:inline;
+    width:auto;
+  }
+  input{
+    /* FOR MOBILE WIDTH:100% */
+    width:100%;
+    padding:1.7%;
+    margin:1.5% 0;
+    font-size: 1em;
+    border-radius: 10px;
+    color: ivory;
+    font-family: 'Special Elite', cursive;
+    box-sizing: border-box;
+    background-color: indianred;
+  }
+  textarea{
+    min-height:100px;
+    width: 100%;
+    padding: 2%;
+    margin: 1.5% 0;
+    font-size: 1em;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: indianred;
+
+
+  }
+  button{
+    /* CHANGED COLORS bellow */
+    background: indianred;
+    border: 1px solid #faf8ed;
+
+    /* Rounded corners */
+    border-radius: 10px;
+
+    /* Text color */
+    color:#322311;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding:2% 4%;
+    font-size: 1em;
+  }
+  /* END MOBILE FORM STYLES */
+
+
 
 
 
@@ -119,20 +205,22 @@ nav a{
 @media only screen and (min-width:1000px){
     /* ---- Desktop styles below ---- */
 
-
-
-
-
-
-
-
           header {
             display: block;
-            max-width: 100%;
-            margin:10px auto;
-            text-align: center;
-            font-size: 4em;
+            max-width: 30%;
+            padding 1%;
+            margin-left: 3%;
+
+
+          }
+
+
+
+
+
+            font-size: 2em;
             position: static;
+
             animation: colorchange 10s ease infinite;@keyframes colorchange
              {
                0% {background: ivory;}
@@ -161,3 +249,12 @@ nav a{
             font-size: 50%;
 
           }
+
+          main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 1rem;
+            margin: 20px 20px 20px 20px;
+          }
+
+          
