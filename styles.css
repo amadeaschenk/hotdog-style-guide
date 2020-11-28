@@ -51,7 +51,7 @@ display: grid;
 margin: 0px auto;
 }
 
-p {
+p {font-size: 100%;
   text-align: center;
 }
 
@@ -79,7 +79,7 @@ article {
 h2 {
   font-size: 5rem;
   text-align: center;
-  margin-top: 150px;
+  margin-top: -20px;
   margin-bottom: 0px;
 
 
@@ -112,7 +112,9 @@ section {
 
 }
 
+a:hover {color: indianred;
 
+}
 
 #gotcha {
   color: indianred;
@@ -120,7 +122,23 @@ section {
   margin-bottom: 0px;
 }
 
+.notfound {
+    display: inline;
+  }
 
+.big {
+  font-size: 150pt;
+  text-align: center;
+  margin: -50px auto 0px auto;
+  color: indianred;
+}
+
+.smaller {
+  font-size: 1.2em;
+  text-align: center;
+  margin: -20px auto;
+  color: indianred;
+}
 
 nav{
   display: grid;
@@ -136,7 +154,7 @@ nav a{
   text-decoration: none;
   color: #322311;
   font-weight: normal;
-  font-size: 30%;
+  font-size: 100%;
 
 }
 
@@ -196,8 +214,13 @@ nav a{
   }
   /* END MOBILE FORM STYLES */
 
-
-
+h3  {
+  text-align: center;
+  font-size: 200%;
+  color: indianred;
+  text-transform: uppercase;
+  margin-top: 20vh;
+}
 
 
 
@@ -257,4 +280,12 @@ nav a{
             margin: 20px 20px 20px 20px;
           }
 
-          
+          .ingredients {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            grid-gap: 1rem;
+            margin: 20px 20px 20px 20px;
+          }
+
+
+          }
