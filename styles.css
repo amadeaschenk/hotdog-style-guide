@@ -55,9 +55,23 @@ p {font-size: 100%;
   text-align: center;
 }
 
+#up {font-size: 100%;
+  text-align: center;
+  font-size: 500%;
+}
+
+
+
 main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 1rem;
+  margin: 20px 20px 20px 20px;
+}
+
+.hotdogs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
   margin: 20px 20px 20px 20px;
 }
@@ -122,9 +136,7 @@ a:hover {color: indianred;
   margin-bottom: 0px;
 }
 
-.notfound {
-    display: inline;
-  }
+
 
 .big {
   font-size: 150pt;
@@ -146,7 +158,7 @@ nav{
   grid-auto-flow: column;
   grid-gap: 2%;
   padding:2% auto;
-  font-size: 4em;
+  font-size: 2em;
 }
 
 nav a{
@@ -219,7 +231,7 @@ h3  {
   font-size: 200%;
   color: indianred;
   text-transform: uppercase;
-  margin-top: 20vh;
+  margin-top: 5vh;
 }
 
 
@@ -233,16 +245,13 @@ h3  {
             max-width: 30%;
             padding 1%;
             margin-left: 3%;
-
-
           }
 
 
 
 
 
-            font-size: 2em;
-            position: static;
+
 
             animation: colorchange 10s ease infinite;@keyframes colorchange
              {
@@ -253,7 +262,7 @@ h3  {
               100% {background: ivory;}
             }
 
-          }
+
 
           nav{
             display: grid;
@@ -280,6 +289,13 @@ h3  {
             margin: 20px 20px 20px 20px;
           }
 
+          .hotdog {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 1rem;
+            margin: 20px 20px 20px 20px;
+          }
+
           .ingredients {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -287,5 +303,16 @@ h3  {
             margin: 20px 20px 20px 20px;
           }
 
+          .form-container{
+            margin: 20px auto;
+            width:60%;
+          }
+
+          .big {
+            font-size: 150pt;
+            text-align: center;
+            margin: 30vh auto 0px auto;
+            color: indianred;
+          }
 
           }
