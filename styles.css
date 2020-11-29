@@ -55,9 +55,21 @@ p {font-size: 100%;
   text-align: center;
 }
 
-#up {font-size: 100%;
-  text-align: center;
-  font-size: 500%;
+footer{
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: indianred;
+    color: ivory;
+}
+
+footer p {
+  font-size: 2rem;
+}
+
+footer a:hover {
+  color: black;
 }
 
 
